@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock - Paper - Scissors</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <img class="header-img" id="fist" src="images/hands-and-gestures.svg" />
+        <img class="header-img" id="hand" src="images/gestures.svg" />
+        <img class="header-img" id="peace" src="images/peace.svg" />
+      </div>
+    </header>
+    <main>
+      <div id="intro">
+        <h2>
+          Rock, Paper, Scissors
+        </h2>
+        <h3 class="messageOut"></h3>
+        <div class="starter-wrapper">
+          <p>A game of chance used to settle disputes since 1600.</p>
+          <button id="play-button">PLAY</button>
+          <h4>The Rules</h4>
+          <ul>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+            <li>First to win 5 rounds wins</li>
+          </ul>
+        </div>
+        <div class="play-wrapper">
+          <div id="game-wrapper">
+            <div class="score-title">
+              <h3>Player Score</h3>
+            </div>
+            <div class="score-title">
+              <h3>Computer Score</h3>
+            </div>
+            <div class="score" id="player-score">0</div>
+            <div class="score" id="computer-score">0</div>
+          </div>
+          <hr />
+          <h3>Make your selection</h3>
+          <div class="button-wrapper">
+            <button class="game-button" id="rock-button">
+              Rock
+            </button>
+            <button class="game-button" id="paper-button">Paper</button>
+            <button class="game-button" id="scissors-button">Scissors</button>
+          </div>
+          <hr />
+          <h3>Game Results</h3>
+          <div class="results-wrapper">
+            <div class="past-results">
+              <div class="result-header">
+                <h3>Round</h3>
+                <div class="player-title">
+                  <h3>Player</h3>
+                </div>
+                <div class="computer-title">
+                  <h3>Computer</h3>
+                </div>
+              </div>
+              <div class="items-wrapper"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+          >Smashicons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
